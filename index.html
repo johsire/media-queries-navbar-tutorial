@@ -7,6 +7,7 @@
  <meta name="viewport" content="width=device-width, initial-scale=1">
  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
  <script src="main.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 </head>
 <body>
 
@@ -22,6 +23,7 @@
           <a href="#"><li>Gallery</li></a>
           <a href="#"><li>Contact</li></a>
        </ul>
+       <div class="handle">Menu</div>
     </nav>
     <section>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla est tenetur cumque praesentium, deserunt ad quaerat voluptatum vitae rem, voluptas excepturi quam in quod commodi asperiores tempore cum amet omnis!
@@ -35,6 +37,10 @@
         <br/>
         officiis nemo ex ea tempore vel laborum sed inventore delectus dolores. Beatae dicta nihil non mollitia aperiam ratione, eaque corrupti voluptates reprehenderit fuga itaque voluptatibus sed dolorem cupiditate consequatur ducimus a maxime totam dolorum quod qui iste. Provident veniam accusantium fugit vero, iste possimus ipsam repellendus recusandae ex, quod perferendis placeat vitae, reprehenderit aliquam doloribus molestias quam minus sunt eveniet neque nostrum voluptatibus dolores maiores ab? Ipsam eligendi minima error nulla sunt pariatur, voluptates temporibus illo autem sequi. Ipsum perferendis voluptates, sunt optio magnam quo est cumque vel nostrum temporibus exercitationem dolorum atque iure molestias.
     </section>
-
+    <script>
+        $('.handle').on('click', function(){
+            $('nav ul').toggleClass('showing');
+        });
+</script>
 </body>
 </html>

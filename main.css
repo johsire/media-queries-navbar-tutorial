@@ -24,6 +24,11 @@ nav ul {
  padding: 0;
  text-align: center;
  margin: 0;
+ -webkit-transition: max-height 0.4s;
+ -ms-transition: max-height 0.4s;
+ -moz-transition: max-height 0.4s;
+ -o-transition: max-height 0.4s;
+ transition: max-height 0.4s;
 }
 
 nav ul li {
@@ -43,11 +48,30 @@ section {
     margin: 0, auto;
 }
 
+.handle {
+    width: 100%;
+    background: #005c48;
+    text-align: left;
+    box-sizing: border-box;
+    padding: 15px 10px;
+    cursor: pointer;
+    display: none;
+}
+
 @media screen and (max-width: 580px){
+    nav ul {
+        max-height: 0px;
+    }
+    .showing {
+        max-height: 20em;
+    }
     nav ul li {
         box-sizing: border-box;
         width: 100%;
         padding: 15px;
         text-align: left;
+    }
+    .handle {
+        display: block;
     }
 }
